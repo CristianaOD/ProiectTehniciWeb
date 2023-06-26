@@ -1,0 +1,64 @@
+/*Etapa2 - ex 4. 2*/
+html{
+    font-size: 12px;
+}
+body{
+    --spatiere_pag: 10px; /*a*/
+    --padding_sectiune: 5px; /*d*/
+}
+
+body * {
+    transition: none;
+    animation: none;
+}
+
+/*Etapa2 - ex 4. 3*/
+/*
+#welcome > h2{
+    animation: none;
+    transition: none;
+}
+#întrebări > h2{
+    animation: none;
+}
+#transport > h2{
+    animation: none;
+}
+*/
+#grid-pagina{
+    display: grid;
+    grid-template-areas: "z-welcome"
+                         "z-fig1"
+                         "z-transport"
+                         "z-fig2"
+                         "z-întrebări"
+                         "z-promoții"
+                         "z-comunitate"  
+                         "z-recenzii" ;
+                         
+}
+
+#grid-pagina > *{  /*spatiere; nu mai avem grap*/
+    margin-bottom: 5px;
+}
+
+#grid-pagina{ /*una sub alta*/
+    display:block;
+}
+
+/*Etapa2 - ex 6.*/
+#tabel-special{
+    overflow-x:scroll;
+    width: 200px;
+}
+#tabel-special1{
+    overflow-x:scroll;
+    width: 200px;
+}
+
+iframe {
+    height: 200px;
+    width: 100%;
+    max-width: 350px;
+}
+

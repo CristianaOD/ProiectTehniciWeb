@@ -1,0 +1,495 @@
+<!--1-->
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <!--2-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Site-ul nostru C&D îți oferă o gamă variantă de articole vestimentare.">
+        <meta name="keywords" content="haine, pantaloni, bluze, tricouri, fuste">
+        <title>C&D</title>
+        <meta name="author" content="Ojoc Diana-Cristiana">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--fara el nu merge media query-->
+        
+        <!--3-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resurse/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resurse/ico/favicon-16x16.png">
+        <link rel="manifest" href="./resurse/ico/site.webmanifest">
+        <link rel="mask-icon" href="./resurse/ico/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./resurse/ico/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="./resurse/ico/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+<!--Etapa2, 3-->
+        <link rel="stylesheet" href="resurse/css/general.css" type="text/css" />
+        <link rel="stylesheet" href="resurse/css/general1000.css" type="text/css" media=" screen and (max-width:1000px)"/>
+        <link rel="stylesheet" href="resurse/css/general700.css" type="text/css" media=" screen and (max-width:700px)"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="resurse/layout.css" type="text/css" />
+        <!--<link rel="stylesheet" href="resurse/scss/nav.scss" type="text/css" />-->
+        <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
+        <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media=" screen and (max-width:1000px)"/>
+        <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media=" screen and (max-width:700px)"/>
+        
+        <!--
+        <style>
+            #h1{
+                background-color: rgb(220, 139, 225);
+            }
+
+        </style>
+        -->
+        
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+
+
+    </head>
+    <body>
+    <header > <!--class="c1" id="h1"-->
+        
+        <h1 id="sigla">C&D</h1>
+    
+        <figure id="poza_principala"> 
+            <picture>
+               <source media="(max-width:400px)" srcset="./resurse/imagini/hainem6.png">
+               <source media="(max-width:600px)" srcset="./resurse/imagini/haine1.png">
+               <source media="(max-width:800px)" srcset="./resurse/imagini/haine2.png">
+
+               <img src = "./resurse/imagini/haine3.png" alt="imagine-sigla" title="Bucură-te de noile haine"> 
+           
+           </picture>     
+           <figcaption><i>Distrează-te schimbându-ți garderoba</i></figcaption>
+       </figure>
+        
+    </header>
+    <nav>
+
+        <label id="hamburger" for="ch-menu">
+            <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+    
+    
+
+       <ul class="meniu">
+           <li><div id="acasa"><i class="fa-solid fa-house"></i>Acasa</div><div id="acasa-mediu"><i class="fa-solid fa-house"></i></div><!--unde avem submeniu nu trebuie sa avem link-->
+               <ul>
+                <!--ex c-->
+                   <li><a href="#welcome"><span class="sageata">→</span>Bine ați venit</a></li>
+                   <li><a href="#promoții"><span class="sageata">→</span>Promoții</a></li>
+                   <li><a href="#întrebări"><span class="sageata">→</span>Întrebări frecvente</a></li>
+                   <li><a href="#recenzii"><span class="sageata">→</span>Recenzii</a></li>
+                   <li><a href="#comunitate"><span class="sageata">→</span>Comunitatea C&D</a></li>
+               </ul>
+           </li>
+           
+           <li><div>Femei</div>
+                <ul>
+                    <li><a href="#"><span class="sageata">→</span>Pantaloni</a></li>
+                    <li><a><span class="sageata">→</span>Bluze</a></li>
+                    <li><a><span class="sageata">→</span>Fuste</a></li>  
+                    <li><a><span class="sageata">→</span>Tricouri</a></li> 
+                </ul>
+            </li>
+                   <!-- <details><summary>Pantaloni</summary>                 
+                       <li><a href="#meniu_sec">Pantaloni scurți</a><br/></li>
+                       <li><a href="#meniu_sec">Pantaloni eleganți</a><br/></li>
+                    <li><a href="#meniu_sec">Blugi</a></li>
+                   </details>
+                
+               
+                   <details><summary>Bluze</summary>
+                       <a href="#meniu_sec">Bluze elegante</a><br/>
+                       <a href="#meniu_sec">Hanorace</a>
+                   </details>
+               
+               
+                   <details><summary>Fuste</summary>
+                       <a href="#meniu_sec">Fuste lungi</a><br/>
+                       <a href="#meniu_sec">Fuste midi</a><br/>
+                       <a href="#meniu_sec">Fuste mini</a>
+                   </details>
+           
+                   <details><summary>Tricouri</summary>
+                       <a href="#meniu_sec">Tricouri</a>
+                   </details> -->
+                   
+            
+
+           <li><div>Barbați</div>
+            <ul>
+                <li><a><span class="sageata">→</span>Pantaloni</a></li>
+                <li><a><span class="sageata">→</span>Bluze</a></li>  
+                <li><a><span class="sageata">→</span>Tricouri</a></li> 
+            </ul>
+<!--                     
+                   <details><summary>Pantaloni</summary>                  
+                       <a href="#">Pantaloni scurți</a><br/>
+                       <a href="#">Pantaloni eleganți</a><br/>
+                       <a href="#">Blugi</a>
+                   </details>
+               
+                   <details><summary>Bluze</summary>
+                       <a href="#">Bluze elegante</a><br/>
+                       <a href="#">Hanorace</a>
+                   </details>
+               
+                   <details><summary>Tricouri</summary>
+                       <a href="#">Tricouri</a>
+                   </details>
+                -->
+           </li>
+           
+           <li><div>Copii</div>
+                <ul>
+                    <li><a><span class="sageata">→</span>Pantaloni</a></li>
+                    <li><a><span class="sageata">→</span>Bluze</a></li>
+                    <li><a><span class="sageata">→</span>Fuste</a></li>  
+                    <li><a><span class="sageata">→</span>Tricouri</a></li> 
+                </ul>
+<!--                        
+                   <details><summary>Pantaloni</summary>                  
+                       <a href="#">Pantaloni scurți</a><br/>
+                       <a href="#">Pantaloni eleganți</a><br/>
+                       <a href="#">Blugi</a>
+                   </details>
+               
+                   <details><summary>Bluze</summary>
+                       <a href="#">Bluze elegante</a><br/>
+                       <a href="#">Hanorace</a>
+                   </details>
+               
+                   <details><summary>Fuste</summary>
+                       <a href="#">Fuste lungi</a><br/>
+                       <a href="#">Fuste midi</a><br/>
+                       <a href="#">Fuste mini</a>
+                   </details>
+               
+                   <details><summary>Tricouri</summary>
+                       <a href="#">Tricouri</a>
+                   </details> -->
+               
+           </li>
+           
+           <li><a href="#transport">Transport</a></li>
+           
+       </ul>
+   </nav>
+    <main>
+        <div id="grid-pagina">
+            <section id="welcome">
+                <h2>Bine ați venit <i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 2s;"></i></h2>
+
+                <p class="intro">Vă mulțumim că ne vizitați site-ul. Sperăm că o să putem să vă satisfacem dorințele! Vă urăm mult spor la cumpărături!
+                
+                <div class="container-iframe">
+                    <div class="taburi-iframe">
+                        <a class= "butonif" href="https://www.youtube.com/embed/hoKDrFyQDy0" target="ifr-video">Prezentare 1</a>
+                        <a class= "butonif" href= "https://www.youtube.com/embed/x3nfMGTmZpA" target="ifr-video">Prezentare 2</a>
+                        <a class= "butonif" href="https://www.youtube.com/embed/zsu2WRFaUoQ" target="ifr-video">Prezentare 3</a>
+                    </div> 
+
+                    <!--11c-->
+                    <iframe class = "video" name="ifr-video" width="560" height="315" src="https://www.youtube.com/embed/hoKDrFyQDy0" title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div> 
+
+                
+                <!--10c-->
+                <p><strong>Livrare în 3-4 zile lucrătoare</strong></p>
+                <p>Te ajutăm să ai un look <i>mișto</i></p> <!--10b-->
+                <p>Anna Wintour – <q>Creeaza-ti propriul stil…fa-l sa fie unic pentru tine, dar identificabil pentru altii.</q></p>
+                <!--11a-->
+                <p>Uitați un mic <a href="https://www.youtube.com/watch?v=TWLJ9Qn_ZyY&ab_channel=123GO%21Romanian">video</a> care v-ar fi de ajutor în stilizarea chiar de acasă a hainelor deja achiziționate, dar cărora nu le mai găsiți farmecul</p>
+                <!--11d-->
+                <a href="./resurse/imagini/program.jpeg"> <p>Descărcați programul de transport</p></a>
+
+            </section>
+            <!--6 + 7-->
+            <section id="promoții">
+                <h2>Promoții</h2>
+                <article>
+                    <h3 class="titlu">Black friday</h3>
+                    <p> În perioada 03.03.2023 - 05.03.20023 magazinul tău preferat C&D are <b>reduceri de până la <s>15%</s><ins>25%</ins>.</b></p>  <!--10a + e-->
+                    <p> Nu rata cele mai noi articole vestimentare.</p> 
+                </article>
+
+                <article>
+                    <h3>Ofertă de sfârșit de sezon</h3>
+                    <p>Achiziționează-ți ultimele produse ale iernii înainte ca acestea să dispară:</p>
+                    <ol>
+                    
+                        <li>La achiziționarea a două perechi de blugi, noi îți vom face <i>cadou</i> perechea mai ieftină!</li>
+                        <li>La achiziționarea unui hanorac în valoare minimă de 40 de lei, noi îți vom mulțumi prin oferirea unui tricou!</li>
+                    </ol>
+                    
+                </article>
+                
+            </section>
+        <div class="imag">
+            <figure id="fig1" class="fg-img">
+            </br>
+                <img src="resurse/imagini/hainefig.jpg" alt="haine">
+                <figcaption>Haine - prezentare</figcaption>
+            </br>
+                <img src="resurse/imagini/haineexemplu.jpg" alt="haine">
+                <figcaption>Compleu</figcaption>
+            </figure>
+        </div>
+        <div class="imag">
+            <figure id="fig2" class="fg-img">
+            </br> 
+            <img src="resurse/imagini/tricouri de cuplu.jpg" alt="tricou">
+            <figcaption>Tricouri de cuplu</figcaption>
+            </br>
+            <img src="resurse/imagini/hanoracptcuplu.png" alt="hanorac">
+            <figcaption>Hanorace de cuplu</figcaption>
+            </figure>
+        </div>
+            <section id="întrebări">
+                <h2><i class="fas fa-question-circle"></i> Întrebări frecvente</h2>
+                <!--12-->
+                <details><summary>În cate zile îmi va ajunge comanda?</summary>
+                    <p>Bună ziua! Comanda dumneavoastră va ajunge într-un interval de 3-4 zile lucrătoare. În cazul în care nu ve-ți intra în posesia coletului în acest interval vă rugăm să ne contacta-ți. Vă mullțumim!</p>
+                </details>
+                <details><summary>Produsele dumneavostră sunt calitative?</summary>
+                    <p>Da!Ne dorim ca clienții noștrii să se simtă confortabil în hainele noastre. Vă mulțumim!</p>
+                </details>
+                <details><summary>Care sunt cheltuielile de transport și manipulare pentru cheltuielile online?</summary>
+                    
+                    <details>
+                        <summary>Ridicare standard din locație:</summary>
+                        <p>Ridicarea standard din locație vă permite să selectați locația din care doriți să ridicați comanda, în funcție de nevoile dumneavoastră. Selectați această opțiune de livrare atunci când finalizați cumpărăturile. Mulțumim de înțelegere!</p>
+                    </details>
+                    
+                    <details>
+                        <summary>Click & Collect:</summary>
+                        <p>Din motive de mentenanță, este posibil ca acest serviciu să nu fie disponibil pentru acest produs.
+                            Ai 7 zile pentru a ridica coletul începând de la data la care sosește în magazinul C&D. Vei primi un sms și un e-mail de confirmare. Nu uita să aduci documentul de identitate și codul pentru ridicare, deoarece nu-ți putem preda coletul fără acesta.Vă mulțumim de înțelegere!</p>
+                    </details>
+                    
+                </details>
+                <details><summary>Pot anula sau modifica comanda?</summary>
+                    <p>Începem să procesăm comanda rapid, ceea ce înseamnă că nu putem face modificări după confirmare. Aceasta include schimbarea adresei de livrare sau a opțiunii de livrare. 
+                        Cu toate acestea, este posibil să puteți anula comanda și să plasați una nouă, deoarece avem o scurtă perioadă de grație după confirmarea comenzii. Vă mulțumim!</p>
+                </details>
+                <details><summary>În data de <time datetime="2023-04-14">14 aprilie 2023</time> se livrează?</summary>
+                    <p>Nu! În ziua de <time datetime="2023-04-14">14 aprilie 2023</time> curierii cu care comunicăm sunt în concediu. Vă mulțumim!</p>
+                </details>
+                
+            </section>
+
+            <section id="recenzii">
+                <h2>Recenzii</h2> 
+                <details><summary>5 steluțe procent 80%</summary>
+                    <p>Ion C. - <i>Produse calitative!</i></p>
+                    <p>Teodora M. - <i>Fiicei mele i-a plăcut foarte mult bluza pe care i-am făcut-o cadou. O să revin cu drag!</i></p>
+                    <p>Antonia AF. - <i>Foarte serioși!</i></p>
+                    <p>Marin - <i>Excelent!</i></p>
+                    <p>Lavinia O. - <i>Sunt multumit, tricou de calitate, voi mai comanda</i></p>
+                </details>
+
+                <details><summary>4 steluțe procent 10%</summary>
+                    <p>Andrei B. - <i>Super prețuri, super selecție și calitate</i></p>
+                    <p>Georgiana R. - <i>Am fost foarte mulțumit de serviciul dumneavoastră</i></p>
+                    <p>Anastasia B. - <i>totul este în regulă</i></p>
+                </details>
+
+                <details><summary>3 steluțe procent 7%</summary>
+                    <p>Barbu - <i>Totul a venit ambalat frumos</i></p>
+                    <p>Ionel - <i>Livrarea s-a efectuat destul de repede.</i></p>
+                    <p>Ozana G. - <i>Foarte serioși!</i></p>
+                </details>
+
+                <details><summary>2 steluțe procent 2%</summary>
+                    <p>Sorin L. - <i>Doua din 4 tricouri mi-au venit cu defect. Pe baza celorlalte doua v-as recomanda cu drag.</i></p>
+                    <p>Ioana Z. - <i>foarte slab acest site de haine nu gasesc niciunde niste tricouri potrivite pentru copil este facut aiurea pt mine personal</i></p>
+                    <p>Lilian G. - <i>OK</i></p>
+                </details>
+
+                <details><summary>1 steluțe procent 1%</summary>
+                    <p>George G. - <i>Comanda a ajuns abia după o săptămână</i></p>
+                    <p>Ana T.<i>Marfa este de bună calitate, dar am avut mari probleme cu livrarea, ceea ce sunt foarte surprins în timpul de azi de internet și totul..foarte rău, din cauza asta, nu cred că voi mai comanda de pe site-ul dvs.</i></p>
+                    
+                </details>
+                
+            </section>
+
+            <section id="comunitate">
+                <h2>Comunitatea C&D</h2>
+                <div id="grid-comunitate">
+                    <figure>
+                        <img src="resurse/imagini/pantaloni.jpg" alt="Comanda pantaloni">
+                        <figcaption>Ioana H. - <i>Îmi plac foarte mult noii pantaloni</i><br/>
+                            <time datetime="2022-01-12"> 12 decembrie 2022</time></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="resurse/imagini/hanorac.jpg" alt="Comanda bluza">
+                        <figcaption>Maria A. - <i>Ador noua mea bluză</i><br/>
+                        <time datetime="2023-03-03"> 3 martie 2023</time></figcaption>
+                    </figure>
+                    
+                </div>
+            </section>
+            <!--Etapa2 - ex 6.-->
+            <section id="transport">
+                <h2><i class="fas fa-car"></i> Transport</h2>
+                    
+                    <div id="tabel-special">
+                    <table id="tab-transport">
+                        <caption>Transportul coletelor în perioada 13.04.2023-18.04.2023</caption>
+                        <thead>
+    
+                            <tr>
+                                <th>Perioadă</th>
+                                <th>Zi</th>
+                                <th>Disponibilitate</th>
+                                <th>Tarif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td> Zile lucrătoare</td>
+                                <td>Joi</td>
+                                <td>07:00 - 17:00</td>
+                                <td>10 lei</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Zile lucrătoare</td>
+                                <td>Vineri</td>
+                                <td>07:00 - 17:00</td>
+                                <td>10 lei</td>
+                                
+                            </tr>
+                            <tr>
+                                
+                                <td>Weekend</td>
+                                <td>Sâmbătă</td>
+                                <td>08:00 - 12:00</td>
+                                <td>15 lei</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Weekend</td>
+                                <td>Duminică</td>
+                                <td>08:00 - 10:00</td>
+                                <td>20 lei</td>
+                            </tr>
+                            <tr>
+                                
+                                <td >Zile lucrătoare</td>
+                                <td>Luni</td>
+                                <td>07:00 - 17:00</td>
+                                <td>10 lei</td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Zile lucrătoare</td>
+                                <td>Marți</td>
+                                <td>07:00 - 17:00</td>
+                                <td>10 lei</td>
+                                
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <td colspan="4">Vă mulțumim pentru înțelegere</td>
+                        </tfoot>
+                    </table> 
+                </div>
+            </br>
+                <div id="tabel-special1">
+                    <table id="tab-transport1">
+                        <caption>TRANSPORTUL COLETELOR</td></caption>
+                        <thead>
+    
+                            <tr>
+                                <th>Perioadă</th>
+                                <th>Zi</th>
+                                <th>Disponibilitate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="5">Zile<br/>Lucrătoare</td>
+                                <td>Luni</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Marti</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Miercuri</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                               
+                                <td>Joi</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Vineri</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                                
+                                <td rowspan="2">Weekend</td>
+                                <td>Sâmbată</td>
+                                <td>deschis</td>
+                            </tr>
+                            <tr>
+                                
+                                <td>Duminică</td>
+                                <td>închis</td>
+                            </tr>
+                        </tbody>
+                    
+                    </table> 
+                    </div>
+            </section>
+        </div>
+        
+    </div>
+    <div id="watermark">
+    </div>
+       
+    </main>
+    <div id="cerc">
+        <div id="triunghi">
+            <a href="#" title="Mergi sus" id="link-top">&#5123</a>
+        </div>
+    </div>
+</br>
+    <footer>
+        <!-- 13. telefon fictiv, adresa fictivă, e-mail fictiv, link-->
+        <p id="end">
+        <address>
+            <a href="mailto:1ojocdiana@gmail.com"> Contactați-ne pe adresa de e-mail</a>
+            <a href="tel:+0744950376"> Contactați-ne telefonic</a>
+            <a href="https://wa.link/fa6dw0">Ne puteți scrie și pe WhatsAapp</a>
+            <a href="https://www.google.com/maps/place/Facultatea+de+Matematic%C4%83+%C8%99i+Informatic%C4%83/@44.4355355,26.0995867,15z/data=!4m2!3m1!1s0x0:0x493984726f0235f9?sa=X&ved=2ahUKEwiX5-H3ocD9AhXy7LsIHdbuC-AQ_BJ6BAhZEAg">Adresa la care ne puteți găsi</a>
+            
+        </address>
+        <!--14-->
+        <small>Copyright &copy; <time datetime="2023-03-03"> 3 martie 2023 </time> </small>
+        <div id="banner"> Acesta este un proiect scolar !</div>
+        </p>
+    </footer>
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+body{ /*ecran mic-meniu mare*/
+    --inaltime-meniu: 45px;
+    --latime-buton: 200px;
+}
+#acasa-mediu
+{
+    display: block;
+}
+#meniu{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+/*block- rand urmator*/
+#acasa
+{
+    display: none;
+}
+#meniu_p
+{
+    display: none;
+}
+

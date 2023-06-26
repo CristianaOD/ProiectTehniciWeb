@@ -1,0 +1,23 @@
+s/*Etapa2 - ex 4. 2*/
+html{
+    font-size: 14px;
+}
+
+body{ /*spatiu mai mic*/
+    --spatiere_pag: 20px; /*a*/
+    --padding_sectiune: 10px;
+}
+body * {
+    transition: none;
+    animation: none;
+}
+#grid-pagina{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "z-welcome z-welcome z-welcome"
+                         "z-fig1 z-transport z-fig2"
+                         "z-întrebări z-întrebări z-întrebări"
+                         "z-promoții  z-comunitate z-recenzii";
+    gap: 10px 10px;
+}
+

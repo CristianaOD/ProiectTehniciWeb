@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Site-ul nostru C&D îți oferă o gamă variantă de articole vestimentare.">
+        <meta name="keywords" content="haine, pantaloni, bluze, tricouri, fuste">
+        <title>C&D</title>
+        <link rel="stylesheet" type="text/css" href="/resurse/css/eroare.css"
+        <%- include("../fragmente/head.ejs"); %> 
+    </head>
+    
+    <body>
+        
+    <%- include("../fragmente/header.ejs");  %> 
+
+    <main>
+        <div id="err-coloane">
+			<div id="err-imag">
+				<img src="<%- locals.imagine %>" />
+			</div>
+			<section>
+				<h2><%- locals.titlu %></h2>
+				<p><%- locals.text %></p>
+			</section>
+		</div>
+    </main>
+    
+    <%- include("../fragmente/footer.ejs");  %> 
+
+
+    </body>
+</html>

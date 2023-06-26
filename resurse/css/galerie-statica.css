@@ -1,0 +1,138 @@
+body{
+  --culoare1: rgb(127, 102, 157);
+  --culoare2: rgb(186, 148, 209);
+  --culoare3: rgb(251, 250, 205);
+  --culoare4: rgb(222, 186, 206);
+  --culoare5: rgb(167, 49, 171);
+  --avisited: rgb(127, 102, 157); 
+  --c1gradient: rgb(186, 148, 209);
+  --culoare-margini: rgb(167, 49, 171);
+
+  --body_color: var(--culoare3);
+  --text_color:black;
+  
+  --background-color: var(--body_color);
+  --spatiere_pagina: 50px; /*a*/
+  --padding_sectiune: 15px;
+  --min_width: 450px; /*imagine mare pe ecran mic - apare scroll barul*/
+  
+  --spatiere_footer: 150px;
+}
+
+#galerie-statica{
+  padding-left:var(--padding-intern);
+  padding-right:var(--padding-intern);
+}
+
+#grid-galerie {
+ display:grid;
+ grid-template-columns: repeat(3,1fr);
+ /*etapa5*/
+ grid-template-areas:  ". z-gol ."
+ "z-gol1 . z-gol4"
+ ". z-gol2 ."
+ "z-gol3 . z-gol5";
+
+ grid-row-gap:0.5em;
+ grid-column-gap:0.5em;
+ counter-reset: nrimag 0;  /* nrimag=3;  0- porneste de la A*/
+}
+#gol{
+  grid-area: z-gol;
+}
+#gol1{
+  grid-area: z-gol1;
+}
+#gol2{
+  grid-area: z-gol2;
+}
+#gol3{
+  grid-area: z-gol3;
+}
+#gol4{
+  grid-area: z-gol4;
+}
+#gol5{
+  grid-area: z-gol5;
+}
+
+@media screen and (max-width:1000px) {
+  #grid-galerie {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". .";
+  }
+
+#gol {
+  display: none;
+}
+#gol1 {
+  display: none;
+}
+#gol2 {
+  display: none;
+}
+#gol3 {
+  display: none;
+}
+#gol4 {
+  display: none;
+}
+#gol5 {
+  display: none;
+}
+}
+
+
+#grid-galerie figure {
+  position: relative;
+  overflow: hidden;
+}
+
+#grid-galerie figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--culoare3);
+  color: var(--culoare2);
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+  transform: scale(0);
+  transition: transform 1s ease 100ms;
+}
+
+#grid-galerie figure img {
+  filter: contrast(80%);
+  transition: filter 1s ease 100ms;
+}
+
+#grid-galerie figure:hover figcaption {
+  transform: scale(1);
+}
+
+#grid-galerie figure:hover img {
+  filter: contrast(200%);
+}
+
+#grid-galerie img{
+  width: 100%;
+}
+#grid-galerie figcaption{
+  text-align:center;
+  counter-increment: nrimag 1; /* nrimag+=2 ; 1- creste din unu in 1*/
+}
+
+#grid-galerie figcaption::before{
+  content: counter(nrimag,  lower-greek) ") "; /*pentru litere mari; default e 1, 2,...*/
+}
+
+@media screen and (max-width:500px){
+  #grid-galerie {
+      display:block;
+  }
+}
